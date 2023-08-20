@@ -1,35 +1,28 @@
 <!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
+  This template is created based on the design by Syed Ali Hussnain.
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <!-- Import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
   <!-- Put your site title here -->
   <title>
-    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
+    Shih-Che, Lai | forthcoming graduate in Computer Science from the University of Manchester.
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description"
+    content="I'm Shih-Che Lai, known as Simon, a software enthusiast with a Master's in Advanced Computer Science. My proficiency spans Java, Python, C++, Flutter, and more. Crafting applications is my passion, driven by the joy of enhancing user experiences. Beyond academics, I develop Python scripts for task automation and indulge in Unity and C# game creation. From iOS apps to image classification, I've explored diverse projects. My goal is to become a software development authority, leading teams to create impactful applications.">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <meta name="keywords"
+    content="Java, Python, C, C++, C#, Flutter, Dart, Linux, HTML, CSS, JavaScript, Prolog, LATEX, Swift, MySQL, Word, Excel, PowerPoint(Mos certificated)" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -38,31 +31,26 @@
   <!-- ***** Header ***** -->
 
   <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="row" id="nav-bar">
+      <!-- Nav bar will be loaded here -->
+      <script>
+        $(function () {
+          $("#nav-bar").load("sharePages/nav.html");
+        })
+      </script>
     </div>
+
     <div class="header__text-box row">
       <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+          <h1 class="heading-primary">
+              <span>Shih-Che, Lai (Simon)</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>Forthcoming graduate in Computer Science from the University of Manchester.</p>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
-    </div>
+  </div>
+
   </header>
 
   <main role="main">
@@ -90,7 +78,7 @@
               </ul>
 
               <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
+                <a href="works/final-year-project.html" target="_blank" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
@@ -249,7 +237,8 @@
         </li>
         <li class="footer__social-link-item">
           <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
+              alt="Linkedin">
           </a>
         </li>
       </ul>
@@ -268,7 +257,7 @@
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
   <script src="./index.js"></script>
 </body>
